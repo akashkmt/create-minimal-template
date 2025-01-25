@@ -14,9 +14,22 @@
   "description": "A CLI tool to generate Minimal Templates",
   "type": "module",
   "bin": {
-    "create-minimal-template": "./bin/cli.mjs"
+    "create-minimal-template": "bin/cli.mjs"
   },
   "dependencies": {
     "inquirer": "^12.1.0"
-  }
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "create-minimal-template"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akashkmt/create-minimal-template.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akashkmt/create-minimal-template/issues"
+  },
+  "homepage": "https://github.com/akashkmt/create-minimal-template#readme"
 }
