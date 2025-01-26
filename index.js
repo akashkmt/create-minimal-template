@@ -3,7 +3,7 @@
 import inquirer from "inquirer";
 import { join } from "path";
 import { existsSync, mkdirSync } from "fs";
-import copyTemplate from "../src/index.mjs";
+import copyTemplate from "./src/index.mjs";
 
 async function getUserInputs() {
   const answers = await inquirer.prompt([
