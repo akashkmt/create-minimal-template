@@ -1,6 +1,6 @@
 {
   "name": "create-minimal-template",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "keywords": [
     "react",
     "vite",
@@ -18,14 +18,5 @@
   },
   "dependencies": {
     "inquirer": "^12.1.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/akashkmt/create-minimal-template.git"
-  },
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/akashkmt/create-minimal-template/issues"
-  },
-  "homepage": "https://github.com/akashkmt/create-minimal-template#readme"
+  }
 }
