@@ -50,7 +50,7 @@ pnpx create-minimal-template
 
 🎉 Woohoo! Your project "super-cool-app" is ready.
 
-👉 Run the following:
+👉 Next steps:
 
 cd super-cool-app
 npm run dev
