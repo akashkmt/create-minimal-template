@@ -1,5 +1,16 @@
-node_modules
-.git
-.npmignore
-test/
+# Development files
 *.log
+.DS_Store
+
+# Git files
+.git
+.gitignore
+
+# IDE files
+.vscode
+.idea
+*.swp
+*.swo
+
+# Temporary files
+test-*

@@ -1,6 +1,6 @@
 {
   "name": "create-minimal-template",
-  "version": "2.0.1",
+  "version": "3.0.1",
   "bin": {
     "create-minimal-template": "./bin/index.js"
   },
@@ -13,10 +13,13 @@
     "webpack",
     "template",
     "minimal-template",
-    "cli"
+    "cli",
+    "scaffolding",
+    "boilerplate",
+    "project-generator"
   ],
   "author": "Akash Kumawat",
-  "description": "A CLI tool to Dynamically scaffold Minimal Project Templates",
+  "description": "A CLI tool to dynamically scaffold minimal project templates with React, Next.js, Vite, and Webpack",
   "type": "module",
   "license": "MIT",
   "dependencies": {
