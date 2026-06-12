@@ -1,31 +1,10 @@
-# ⚡️ create-minimal-template
+# create-minimal-template
 
-Hey there, frontend wizard! 🧙‍♂️  
-Tired of setting up React projects from scratch over and over again?
+A CLI tool that scaffolds minimal, production-ready frontend projects. Pick your framework, bundler, language, and helpers — get a clean project with nothing extra.
 
-Say hello to **create-minimal-template**
-<br />
-A CLI tool to Dynamically scaffold Minimal Project Templates
-<br />
-Your friendly CLI that lets you spin up a modern React app with **your stack, your rules**, and zero boilerplate mess.
+All packages are resolved to their latest stable versions at scaffold time.
 
-## ✨ What’s Inside?
-
-Pick and choose the stuff you actually care about:
-
-✅ React + Vite setup  
-✅ JavaScript or TypeScript  
-✅ Tailwind CSS, ESLint, React Router DOM, Redux Toolkit  
-✅ All the latest package versions
-
-## 🧪 What's Next?
-
-🧱 Next.js support  
-⚙️ Webpack & other bundlers
-
-## 🚀 Usage
-
-You can create a new Project Template using the following command:
+## Usage
 
 ```bash
 npx create-minimal-template
@@ -35,25 +14,82 @@ npx create-minimal-template
 pnpx create-minimal-template
 ```
 
-## Sample Walkthrough
+## What you can configure
 
-```bash
-✨ Welcome to Create Minimal Template ✨
+**Framework**
+- React
+- Next.js
 
-👉 Let’s build your React + Vite project step by step
+**Bundler** (React only)
+- Vite
+- Webpack
 
-? Project name: super-cool-app
+**Language**
+- JavaScript
+- TypeScript
+
+**Helpers**
+- Tailwind CSS (v4)
+- ESLint
+- React Router DOM
+- Redux Toolkit
+
+## Examples
+
+### React + Vite + TypeScript
+
+```
+? Project name: my-app
 ? Choose a framework: React
-? Choose a language: TypeScript
 ? Choose a bundler: Vite
+? Choose a language: TypeScript
 ? Choose helper packages: Tailwind CSS, ESLint
 
-🎉 Woohoo! Your project "super-cool-app" is ready.
+Project "my-app" is ready.
 
-👉 Next steps:
-
-cd super-cool-app
-npm run dev
-
-Happy coding, rockstar! 🚀
+  cd my-app
+  npm run dev
 ```
+
+### Next.js + TypeScript
+
+```
+? Project name: my-next-app
+? Choose a framework: Next.js
+? Choose a language: TypeScript
+? Choose helper packages: Tailwind CSS, Redux Toolkit
+
+Project "my-next-app" is ready.
+
+  cd my-next-app
+  npm run dev
+```
+
+### React + Webpack + JavaScript
+
+```
+? Project name: my-webpack-app
+? Choose a framework: React
+? Choose a bundler: Webpack
+? Choose a language: JavaScript
+? Choose helper packages: ESLint, React Router DOM
+
+Project "my-webpack-app" is ready.
+
+  cd my-webpack-app
+  npm run dev
+```
+
+## Supported configurations
+
+| Framework | Bundler        | Language | Helpers                                    |
+|-----------|----------------|----------|--------------------------------------------|
+| React     | Vite, Webpack  | JS, TS   | Tailwind, ESLint, React Router DOM, Redux  |
+| Next.js   | Built-in       | JS, TS   | Tailwind, ESLint, Redux                    |
+
+## Notes
+
+- React Router DOM is skipped for Next.js (built-in routing covers it)
+- Tailwind uses v4 — `@import "tailwindcss"` syntax, no config file needed
+- ESLint for Next.js is provided by `create-next-app`; TS projects get `@typescript-eslint` on top
+- Webpack projects use `ts-loader` for TypeScript, Babel for JavaScript
